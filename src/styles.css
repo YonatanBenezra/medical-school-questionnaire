@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Rubik', sans-serif;
+    direction: rtl;
+}
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('./assets/wp6751611-white-gradient-wallpapers.jpg');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+<button (click)="currentQuestion()" class="button">לשאלה הבאה<span></span></button>
+<div *ngIf="savedQuestions.includes(randomNumber); else notSaved" >
+  <div class="Saved">
+    <button (click)="saveQuestion()" class="save-btn">השתובה סומנה, לחצי כדי לבטל את סימונה</button>
+    <h1 >{{question.question1}}</h1>
+    <ul>
+      <li>
+        {{question.question2}}
+      </li>
+      <li>
+        {{question.question3}}
+      </li>
+      <li>
+        {{question.question4}}
+      </li>
+      <li>
+        {{question.question5}}
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<ng-template #notSaved>
+  <div class="not-Saved">
+    <button (click)="saveQuestion()" class="not-saved-btn">לחצי כדי לסמן שסיימת את התשובה</button>
+  <h1>{{question.question1}}</h1>
+  <ul>
+    <li>
+      {{question.question2}}
+    </li>
+    <li>
+      {{question.question3}}
+    </li>
+    <li>
+      {{question.question4}}
+    </li>
+    <li>
+      {{question.question5}}
+    </li>
+  </ul>
+  </div>
+</ng-template>
