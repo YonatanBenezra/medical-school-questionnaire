@@ -1,7 +1,7 @@
 <button (click)="currentQuestion()" class="button">לשאלה הבאה<span></span></button>
 <div *ngIf="savedQuestions.includes(randomNumber); else notSaved" >
   <div class="Saved">
-    <button (click)="saveQuestion()" class="save-btn">השתובה סומנה, לחצי כדי לבטל את סימונה</button>
+    <button (click)="saveQuestion()" class="save-btn">התשובה סומנה, לחצי כדי לבטל את סימונה</button>
     <h1 >{{question.question1}}</h1>
     <ul>
       <li>
